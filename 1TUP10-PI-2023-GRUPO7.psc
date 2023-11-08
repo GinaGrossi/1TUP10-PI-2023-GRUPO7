@@ -24,8 +24,8 @@ Algoritmo sistema_ventas_pasajes_aereos
 	Definir encontrado Como Logico
 	Definir valido Como Logico
 	
-	Mostrar "Bienvenido al sistema de venta de pasajes aéreos"
-	Mostrar "Menú de opciones:"
+	Mostrar "Bienvenido al sistema de venta de pasajes aÃ©reos"
+	Mostrar "MenÃº de opciones:"
 	
 	Repetir
 		// validar que ingrese cantidad de opciones disponibles
@@ -82,8 +82,8 @@ Algoritmo sistema_ventas_pasajes_aereos
 				Hasta Que valido
 				
 				stock = calcularStock(tramo) // devuelve un numero fijo de asientos para cada tramo seleccionado
-					
-				//Se puede buscar un pasajero por número de asiento
+				
+				//Se puede buscar un pasajero por nÃºmero de asiento
 				Segun tramo Hacer
 					1://buscar pasaje en el arreglo tramo1[asientos1, dimPasajero]
 						Mostrar "ingrese su numero de asiento "
@@ -179,79 +179,79 @@ Algoritmo sistema_ventas_pasajes_aereos
 				
 				Segun tramo Hacer
 					1:
-							Mostrar "Ingrese nombre del pasajero que desea buscar "
-							Leer pasajeroBuscado
-							
-							Para i=1 Hasta stock Hacer
-								Si tramo1[i,1] == pasajeroBuscado Entonces
-									Mostrar "pasajero encontrado!" 
-									h = i
-									encontrado = Verdadero
-								FinSi
-							FinPara
-							
-							Si encontrado
-								Mostrar "Ruta: " nombreRutas
-								Mostrar "Nombre y apellido: " tramo1[h, 1]
-								Mostrar "DNI: " tramo1[h, 2]
+						Mostrar "Ingrese nombre del pasajero que desea buscar "
+						Leer pasajeroBuscado
+						
+						Para i=1 Hasta stock Hacer
+							Si tramo1[i,1] == pasajeroBuscado Entonces
+								Mostrar "pasajero encontrado!" 
+								h = i
+								encontrado = Verdadero
 							FinSi
-						2:
-							
-							Mostrar "ingrese nombre del pasajero que desea buscar "
-							Leer pasajeroBuscado
-							
-							Para i=1 Hasta stock Hacer
-								Si tramo2[i,1] == pasajeroBuscado Entonces
-									Mostrar "pasajero encontrado!" 
-									h = i
-									encontrado = Verdadero
-								FinSi
-							FinPara
-							
-							Si encontrado
-								Mostrar "Ruta: " nombreRutas
-								Mostrar "Nombre y apellido: " tramo2[h, 1]
-								Mostrar "DNI: " tramo2[h, 2]
+						FinPara
+						
+						Si encontrado
+							Mostrar "Ruta: " nombreRutas
+							Mostrar "Nombre y apellido: " tramo1[h, 1]
+							Mostrar "DNI: " tramo1[h, 2]
+						FinSi
+					2:
+						
+						Mostrar "ingrese nombre del pasajero que desea buscar "
+						Leer pasajeroBuscado
+						
+						Para i=1 Hasta stock Hacer
+							Si tramo2[i,1] == pasajeroBuscado Entonces
+								Mostrar "pasajero encontrado!" 
+								h = i
+								encontrado = Verdadero
 							FinSi
-						3:
-							
-							Mostrar "ingrese nombre del pasajero que desea buscar "
-							Leer pasajeroBuscado
-							
-							Para i=1 Hasta stock Hacer
-								Si tramo3[i,1] == pasajeroBuscado Entonces
-									Mostrar "pasajero encontrado!" 
-									h = i
-									encontrado = Verdadero
-								FinSi
-							FinPara
-							
-							Si encontrado
-								Mostrar "Ruta: " nombreRutas
-								Mostrar "Nombre y apellido: " tramo3[h, 1]
-								Mostrar "DNI: " tramo3[h, 2]
+						FinPara
+						
+						Si encontrado
+							Mostrar "Ruta: " nombreRutas
+							Mostrar "Nombre y apellido: " tramo2[h, 1]
+							Mostrar "DNI: " tramo2[h, 2]
+						FinSi
+					3:
+						
+						Mostrar "ingrese nombre del pasajero que desea buscar "
+						Leer pasajeroBuscado
+						
+						Para i=1 Hasta stock Hacer
+							Si tramo3[i,1] == pasajeroBuscado Entonces
+								Mostrar "pasajero encontrado!" 
+								h = i
+								encontrado = Verdadero
 							FinSi
-						4:
-							
-							Mostrar "ingrese nombre del pasajero que desea buscar "
-							Leer pasajeroBuscado
-							PasajeroBuscado = Minusculas(PasajeroBuscado)
-							
-							Para i=1 Hasta stock Hacer
-								Si tramo4[i,1] == pasajeroBuscado Entonces
-									Mostrar "pasajero encontrado!" 
-									h = i
-									encontrado = Verdadero
-								FinSi
-							FinPara
-							
-							Si encontrado
-								Mostrar "Ruta: " nombreRutas
-								Mostrar "Nombre y apellido: " tramo4[h, 1]
-								Mostrar "DNI: " tramo4[h, 2]
+						FinPara
+						
+						Si encontrado
+							Mostrar "Ruta: " nombreRutas
+							Mostrar "Nombre y apellido: " tramo3[h, 1]
+							Mostrar "DNI: " tramo3[h, 2]
+						FinSi
+					4:
+						
+						Mostrar "ingrese nombre del pasajero que desea buscar "
+						Leer pasajeroBuscado
+						PasajeroBuscado = Minusculas(PasajeroBuscado)
+						
+						Para i=1 Hasta stock Hacer
+							Si tramo4[i,1] == pasajeroBuscado Entonces
+								Mostrar "pasajero encontrado!" 
+								h = i
+								encontrado = Verdadero
 							FinSi
+						FinPara
+						
+						Si encontrado
+							Mostrar "Ruta: " nombreRutas
+							Mostrar "Nombre y apellido: " tramo4[h, 1]
+							Mostrar "DNI: " tramo4[h, 2]
+						FinSi
 				FinSegun
-		
+				
 			4:	
 				Mostrar ""
 				Mostrar "Que ruta desea ordenar?"
@@ -316,7 +316,7 @@ Algoritmo sistema_ventas_pasajes_aereos
 			5:
 				Repetir
 					Mostrar " "
-					Mostrar "ingrese 1 para consultar la cantidad de pasajes vendido por ruta aérea o 2 para consultar el porcentaje de ventas por ruta aérea"
+					Mostrar "ingrese 1 para consultar la cantidad de pasajes vendido por ruta aÃ©rea o 2 para consultar el porcentaje de ventas por ruta aÃ©rea"
 					Leer listado
 					valido = validar(listado, 2)
 				Hasta Que valido
@@ -469,14 +469,14 @@ FinFuncion
 Funcion stock = calcularStock(ruta)
 	Definir Stock Como Entero
 	Segun ruta Hacer
-			1:
-				stock = 120
-			2:
-				stock = 120
-			3:
-				stock = 80
-			4: 
-				stock = 80
+		1:
+			stock = 120
+		2:
+			stock = 120
+		3:
+			stock = 80
+		4: 
+			stock = 80
 	Fin Segun
 FinFuncion
 
@@ -504,7 +504,7 @@ SubProceso cargardatos(tramo, asientos, dimPasajeros)
 	FinMientras
 	dni = ConvertirATexto(dni2)
 	tramo[asientos, 2] = dni
-
+	
 	Mostrar "ingrese su telefono: "
 	Leer tramo[asientos, 3]
 	
@@ -522,7 +522,7 @@ SubProceso mostrarDatos(ruta, tramo, asientos, costoPasaje)
 	Definir costoPasajeC, asientoC Como Caracter
 	
 	Mostrar " "
-	Mostrar "Resumen de la operación: "
+	Mostrar "Resumen de la operaciÃ³n: "
 	Mostrar "Ruta: " ruta
 	Mostrar "Nombre y apellido: " tramo[asientos, 1]
 	Mostrar "Ingrese su DNI: " tramo[asientos, 2]
@@ -541,24 +541,70 @@ SubProceso mostrarDatos(ruta, tramo, asientos, costoPasaje)
 	Mostrar " "
 FinSubProceso
 
-SubProceso ordenarASC(tramo, stock, tam)
-	Para i = 1 Hasta stock Hacer	
-		Para j = tam hasta 1 Hacer		
-			Mostrar Sin Saltar " " tramo[i, j]	
-		FinPara
-		Mostrar ""
-	FinPara
+SubProceso OrdenarASC(tramo, stock, dimPasajero)
+    Definir intercambio Como Logico
+    Definir aux Como Caracter
+    Definir i, j, k Como Entero
+	
+    intercambio = Verdadero
+	
+    Mientras intercambio Hacer
+        intercambio = Falso
+		
+        Para i = 1 Hasta stock - 1 Hacer
+            Si tramo[i, 1] > tramo[i + 1, 1] Entonces
+                Para k = 1 Hasta dimPasajero Hacer
+                    aux = tramo[i, k]
+                    tramo[i, k] = tramo[i + 1, k]
+                    tramo[i + 1, k] = aux
+                FinPara
+                intercambio = Verdadero
+            FinSi
+        FinPara
+    FinMientras
+	
+    Mostrar "Lista de Pasajeros Ordenada Ascendentemente:"
+    Para i = 1 Hasta stock Hacer
+        Mostrar "Asiento " i
+        Mostrar "Nombre: " + tramo[i, 1]
+        Mostrar "DNI: " + tramo[i, 2]
+        Mostrar "---------------------------------"
+    FinPara
 FinSubProceso
 
-SubProceso ordenarDESC(tramo, stock, tam)
-	Para i = stock Hasta 1 Con Paso -1 Hacer	
-		Para j = tam hasta 1 Hacer		
-			Mostrar Sin Saltar " " tramo[i, j]	
-		FinPara
-		Mostrar ""
-	FinPara
+SubProceso OrdenarDESC(tramo, stock, dimPasajero)
+    Definir intercambio Como Logico
+    Definir aux Como Caracter
+    Definir i, j, k Como Entero
+	
+    intercambio = Verdadero
+    i = 0
+	
+    Mientras intercambio y i < stock - 1 Hacer
+        intercambio = Falso
+		
+        Para j = 1 Hasta stock - i Hacer
+            Si tramo[j, 1] < tramo[j + 1, 1] Entonces
+                Para k = 1 Hasta dimPasajero Hacer
+                    aux = tramo[j, k]
+                    tramo[j, k] = tramo[j + 1, k]
+                    tramo[j + 1, k] = aux
+                FinPara
+                intercambio = Verdadero
+            FinSi
+        FinPara
+		
+        i = i + 1
+    FinMientras
+	
+    Mostrar "Lista de Pasajeros Ordenada Descendentemente:"
+    Para i = 1 Hasta stock Hacer
+        Mostrar "Asiento " i
+        Mostrar "Nombre: " + tramo[i, 1]
+        Mostrar "DNI: " + tramo[i, 2]
+        Mostrar "---------------------------------"
+    FinPara
 FinSubProceso
-
 SubProceso mostrarA(stock, asientos, ruta)
 	Mostrar Sin Saltar "para la ruta " ruta
 	Mostrar sin saltar "se vendieron " stock - asientos
