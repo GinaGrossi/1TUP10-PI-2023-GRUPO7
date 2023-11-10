@@ -1,0 +1,27 @@
+// FRACCION DE CODIGO ADAPTADA AL CODIGO INICIAL // 
+
+SubProceso ordenarASC(tramo, stock,tam)
+	Definir i, j, posMenor Como Entero
+	Definir auxiliar Como Caracter
+	Dimension auxiliar[1,1]
+	Para i = 1 Hasta stock-1 Hacer	
+		posMenor = i
+		Para j = i+1 hasta stock Hacer		
+			si tramo[j,tam]<tramo[posMenor,tam] Entonces
+				posMenor = j
+			FinSi
+		FinPara
+		auxiliar[1,1] = tramo[i,tam]
+		tramo[i,tam] = tramo[posMenor,tam]
+		tramo[posMenor,tam]=auxiliar[1,1]
+		
+	FinPara
+	
+	Para i = 1 Hasta stock Hacer	
+		Mostrar Sin Saltar "  " tramo[i,7]
+		Mostrar Sin Saltar "  " tramo[i,1]
+		Mostrar Sin Saltar "  " tramo[i,2]
+		Mostrar " "
+	FinPara
+
+FinSubProceso
