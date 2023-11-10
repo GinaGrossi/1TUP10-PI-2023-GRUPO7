@@ -1,0 +1,37 @@
+
+// SUPROCESO BUSQUEDA POR ASIENTO // funciona dentro del codigo original
+
+SubProceso buscarAsiento(tramo, tam, asientoBuscado)
+	Definir i, centro, inferior, superior Como Entero
+	Definir encontrado Como Logico
+	inferior = 0
+	superior = tam - 1
+	encontrado = Falso
+	
+	Repetir
+		centro = trunc((inferior+superior)/2)
+		
+		si tramo[centro,7] = tramo[asientoBuscado,7]
+			Mostrar "asiento encontrado ", centro 
+			encontrado = Verdadero
+		SiNo
+			si tramo[centro,7]<tramo[asientoBuscado,7]
+				inferior = centro + 1
+			SiNo
+				superior = centro - 1
+			FinSi
+		FinSi
+		si inferior>superior
+			Mostrar "numero de asiento no encontrado"
+		FinSi
+	Mientras Que !encontrado y inferior<= superior
+	
+	si encontrado
+		Mostrar "Ruta: " nombreRutas
+		Mostrar "Nombre y apellido: " tramo[asientoBuscado, 1]
+		Mostrar "Ingrese su DNI: " tramo[asientoBuscado, 2]
+	SiNo
+		Mostrar "No se encontro el asiento, verifique los datos ingresados"
+	FinSi
+
+FinSubProceso
